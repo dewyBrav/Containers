@@ -42,14 +42,13 @@ int main()
     //  auto cnt_st = sl._Get_container();
     //  std::cout << "На основе стек контейнер - " << sl._Get_container()<< std::endl;
 
-    std::priority_queue<char> pr_s;
-
-    for (size_t i = 70; i < 80; ++i)
-    {
-        pr_s.emplace(static_cast<char>(i)); //случайные символы
-    }
-    std::cout << std::endl;
-
+    std::priority_queue<int> pr_s;
+    pr_s.emplace(3);
+    pr_s.emplace(1);
+    pr_s.emplace(6);
+    pr_s.emplace(22);
+    pr_s.emplace(22);
+    pr_s.emplace(11);
     while (!pr_s.empty())
     {
         std::cout << pr_s.top() << ' ';
